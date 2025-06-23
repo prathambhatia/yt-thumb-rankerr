@@ -1,4 +1,6 @@
+# Add the ELO rating system section to the user's provided README content
 
+user_readme = """
 # 🎯 YT Thumbnail Ranker
 
 An intelligent web app that helps YouTubers **automatically rate and compare thumbnails** to determine which one is likely to get the highest **click-through rate (CTR)**. Say goodbye to guesswork—hello data-driven decisions!
@@ -10,9 +12,6 @@ An intelligent web app that helps YouTubers **automatically rate and compare thu
 ![yt1](https://github.com/user-attachments/assets/9927da92-fcd4-445b-a8b1-e4ed4e3c5f2b)
 
 ![yt2](https://github.com/user-attachments/assets/41181265-c606-44d8-9203-5686e81f0834)
-
-
-
 
 > *A simple, intuitive UI where creators can input their video URL or thumbnails and get ranked results.*
 
@@ -56,7 +55,6 @@ To develop an algorithm that **rates and compares YouTube thumbnails**, helping 
 
 ![yt-flow](https://github.com/user-attachments/assets/ec5eda07-f375-4e96-a198-595741674ccd)
 
-
 > *High-level architecture showing user input, API interaction, comparison logic, and output interface.*
 
 ---
@@ -78,59 +76,24 @@ To develop an algorithm that **rates and compares YouTube thumbnails**, helping 
 
 ---
 
+## 📈 Thumbnail Ranking Logic
+
+This project uses the **ELO Rating System** to rank thumbnails based on user comparisons.
+
+### 🔍 How It Works:
+1. Every thumbnail starts with a base score (e.g., 1000).
+2. Users are shown two thumbnails at a time and asked to pick the better one.
+3. The selected (winning) thumbnail’s score increases, while the other’s decreases.
+4. The amount of score change depends on the current ratings of both thumbnails.
+5. Over many comparisons, thumbnails are ranked more accurately based on their visual appeal.
+
+This method allows fair and dynamic ranking, even with a relatively small number of votes.
+
+---
+
 ## 🛠️ Installation
 
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/yt-thumbnail-ranker.git
    cd yt-thumbnail-ranker
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Start the server:
-   ```bash
-   node server.js
-   ```
-
-4. Open your browser at:
-   ```
-   http://localhost:3000
-   ```
-
----
-
-## 🙋‍♂️ How to Use
-
-1. Upload your YouTube video URL or thumbnails manually.
-2. The tool will extract thumbnails or allow you to upload custom ones.
-3. You’ll get a comparison view with rankings.
-4. Choose the best-performing thumbnail to use for your video!
-
----
-
-## 🏁 Conclusion
-
-This project empowers YouTube creators with **data-backed thumbnail insights**, helping them maximize their reach and engagement with minimal effort.
-
----
-
-## 🤝 Contribution
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you’d like to change.
-
----
-
-## 📄 License
-
-[MIT](LICENSE)
-
----
-
-## 📬 Author
-
-Made with ❤️ by [Pratham Bhatia](https://github.com/prathambhatia)
-
