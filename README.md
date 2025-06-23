@@ -1,6 +1,4 @@
-# Add the ELO rating system section to the user's provided README content
 
-user_readme = """
 # 🎯 YT Thumbnail Ranker
 
 An intelligent web app that helps YouTubers **automatically rate and compare thumbnails** to determine which one is likely to get the highest **click-through rate (CTR)**. Say goodbye to guesswork—hello data-driven decisions!
@@ -97,3 +95,52 @@ This method allows fair and dynamic ranking, even with a relatively small number
    ```bash
    git clone https://github.com/yourusername/yt-thumbnail-ranker.git
    cd yt-thumbnail-ranker
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the server:
+   ```bash
+   node server.js
+   ```
+
+4. Open your browser at:
+   ```
+   http://localhost:3000
+   ```
+
+---
+
+## 🙋‍♂️ How to Use
+
+1. Upload your YouTube video URL or thumbnails manually.
+2. The tool will extract thumbnails or allow you to upload custom ones.
+3. You’ll get a comparison view with rankings.
+4. Choose the best-performing thumbnail to use for your video!
+
+---
+
+## 🏁 Conclusion
+
+This project empowers YouTube creators with **data-backed thumbnail insights**, helping them maximize their reach and engagement with minimal effort.
+
+---
+
+## 🤝 Contribution
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you’d like to change.
+
+---
+
+## 📄 License
+
+[MIT](LICENSE)
+
+---
+
+## 📬 Author
+
+Made with ❤️ by [Pratham Bhatia](https://github.com/prathambhatia)
