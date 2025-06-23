@@ -7,6 +7,11 @@ An intelligent web app that helps YouTubers **automatically rate and compare thu
 
 ## 📸 Preview
 
+![yt1](https://github.com/user-attachments/assets/9927da92-fcd4-445b-a8b1-e4ed4e3c5f2b)
+
+![yt2](https://github.com/user-attachments/assets/41181265-c606-44d8-9203-5686e81f0834)
+
+
 
 
 > *A simple, intuitive UI where creators can input their video URL or thumbnails and get ranked results.*
@@ -49,7 +54,8 @@ To develop an algorithm that **rates and compares YouTube thumbnails**, helping 
 
 ## 🧩 System Architecture
 
-![Flowchart](assets/flowchart.png)
+![yt-flow](https://github.com/user-attachments/assets/ec5eda07-f375-4e96-a198-595741674ccd)
+
 
 > *High-level architecture showing user input, API interaction, comparison logic, and output interface.*
 
